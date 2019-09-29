@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Created by http://winaero.com
+; 删除右键切换电源方案菜单
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan]

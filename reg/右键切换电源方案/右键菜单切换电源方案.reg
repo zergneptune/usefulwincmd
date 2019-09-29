@@ -1,0 +1,46 @@
+Windows Registry Editor Version 5.00
+
+; Created by http://winaero.com, reedited by http://ithome.com
+; 添加右键菜单切换电源方案（只有在桌面才有）
+; 按需修改
+; 要查看本机的全部电源方案： powercfg -list
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan]
+
+"Icon"="powercpl.dll"
+
+"MUIVerb"="切换电源计划"
+
+"Position"="Top"
+
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\Balanced]
+
+"MUIVerb"="平衡"
+
+"Icon"="powercpl.dll"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\Balanced\Command]
+
+@="powercfg.exe /S 381b4222-f694-41f0-9685-ff5bb260df2e"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\High Performance]
+
+"MUIVerb"="高性能"
+
+"Icon"="powercpl.dll"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\High Performance\Command]
+
+@="powercfg.exe /S 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\Power Saver]
+
+"MUIVerb"="节能"
+
+"Icon"="powercpl.dll"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan\Shell\Power Saver\Command]
+
+@="powercfg.exe /S a1841308-3541-4fab-bc81-f71556f20b4a"
