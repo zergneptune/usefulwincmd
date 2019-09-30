@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; 需要开放此设置，才能查看病并切换到卓越性能选项
+; 如需回滚，只需把下方值改为00000001然后执行
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+
+"CsEnabled"=dword:00000000
+
