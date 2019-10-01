@@ -1,5 +1,15 @@
 Windows Registry Editor Version 5.00
 
+;修改powershell和cmd的默认编码，等效于在cmd/powershell中敲chcp xxx
+;编码：
+; chcp 437/* 英文 */ 
+; chcp 932/* 日文 */ 
+; chcp 936/* 简体中文 */ 
+; chcp 949/* 韩文 */ 
+; chcp 950/* 繁体中文 */ 
+; chcp 65001 UTF-8
+;请按需将reg中CodePage的值替换为你需要的（记得转换为16进制）
+
 [HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]
 "CodePage"=dword:0000fde9
 

@@ -5,6 +5,7 @@ Windows Registry Editor Version 5.00
 ; 按需修改
 ; 要查看本机的全部电源方案： powercfg -list
 ; 此副本只有平衡和卓越性能。请先查看本地卓越性能的方案GUID，然后把原文中的替换掉（因为卓越性能每次创建GUID都不一样）
+; 强烈推荐备选方案：使用Wox，并且给wox装切换电源方案插件，使用感觉比右键点击要舒适
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan]
 

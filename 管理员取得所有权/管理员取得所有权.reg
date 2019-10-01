@@ -1,5 +1,8 @@
 Windows Registry Editor Version 5.00　　 
 
+; 出处已不可考究
+; 记得以ANSI或GB2312编码保存以防止中文乱码
+
 [HKEY_CLASSES_ROOT\*\shell\runas] 
 
 @="管理员取得所有权" 

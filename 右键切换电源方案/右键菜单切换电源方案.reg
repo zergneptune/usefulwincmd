@@ -4,6 +4,7 @@ Windows Registry Editor Version 5.00
 ; 添加右键菜单切换电源方案（只有在桌面才有）
 ; 按需修改
 ; 要查看本机的全部电源方案： powercfg -list
+; 强烈推荐备选方案：使用Wox，并且给wox装切换电源方案插件，使用感觉比右键点击要舒适
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Switch Power Plan]
 
