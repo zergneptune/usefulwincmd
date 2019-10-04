@@ -2,6 +2,7 @@ Windows Registry Editor Version 5.00
 
 ; 需要开放此设置，才能查看到并切换到卓越性能选项
 ; 如需回滚，只需把下方值改为00000001然后执行
+; 这样做的代价是：无法睡眠，且所有与睡眠相关的设置都会消失
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
 

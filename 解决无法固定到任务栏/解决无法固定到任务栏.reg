@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; see: http://www.xitongcheng.com/jiaocheng/win10_article_48511.html
+[HKEY_CLASSES_ROOT\lnkfile]
+"IsShortcut"="" 
