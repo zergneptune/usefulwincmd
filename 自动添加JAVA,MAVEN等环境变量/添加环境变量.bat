@@ -1,7 +1,11 @@
 @echo off
-set JAVA_HOME=E:\dev\ENV\jdk-13.0.2
-:: æ³¨æ„æˆ‘æ˜¯JDK13æ‰€ä»¥æ²¡æœ‰jreï¼Œéœ€è¦jreçš„è‡ªå·±åŠ ä¸Š
-set PATH=%PATH%;%JAVA_HOME%\bin;%MAVEN_HOME%\bin
-::set CLASSPATH=.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 
-set MAVEN_HOME=E:\dev\ENV\apache-maven-3.6.3
+:: ²Î¿¼£ºÒ»¼üÅäÖÃjava»·¾³±äÁ¿µÄ½Å±¾Åú´¦Àí by Çú½­Ø­¾ÃÎ¥ https://blog.csdn.net/superyangyc123/article/details/79379167
+echo ÕıÔÚÉèÖÃ»·¾³±äÁ¿
+pause
+wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="E:\dev\ENV\jdk-13.0.2"
+::×¢Òâjdk13Ã»ÓĞjreºÍclasspathËùÒÔÃ»ÓĞ¼Ó£¬ĞèÒªµÄ×Ô¼º¼ÓÉÏ
+::wmic ENVIRONMENT create name="CLASSPATH",username="<system>",VariableValue=".;%%JAVA_HOME%%\lib;%%JAVA_HOME%%\lib\tools.jar" 
+wmic ENVIRONMENT create name="MAVEN_HOME",username="<system>",VariableValue="E:\dev\ENV\apache-maven-3.6.3"
+wmic ENVIRONMENT where "name='PATH' and username='<system>'" set VariableValue="%path%;%%JAVA_HOME%%\bin;%%MAVEN_HOME%%\bin" 
+echo ÉèÖÃÍê³É
 pause
